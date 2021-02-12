@@ -4,7 +4,7 @@ date: 2021-02-11T08:23:11+01:00
 draft: false
 ---
 ## “.ps1 is not digitally signed. The script will not execute on the system.”
-This error is clearly not really a typical error, but can be a blocker nontheless. It's more of a security feature then an error.
+This error is clearly not really a typical error, but can be a blocker nontheless. It's more of a security feature than an error.
 
 Simple solution if you're running this script from another service, or as a Azure Runbook, before executing the Invoke-Command:  
 `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
